@@ -6,6 +6,7 @@ JVM分享-2018.06.20
 - 3.为什么需要jvm
 ### 核心
 - 1.JVM运行流程
+    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
 - 2.JVM运行时数据区域
 - 3.JVM内存模型
 ### 类加载器
