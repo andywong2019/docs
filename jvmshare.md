@@ -10,7 +10,7 @@ JVM分享-2018.06.20
 - 2.JVM运行时数据区域
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)
 - 3.JVM内存模型
-    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
+    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
 ### 类加载器
 - 1.双亲委派模型(检查自底而上,启动自上而下)
 - 2.为什么要双亲委派模型（避免重复加载不安全问题）
