@@ -19,6 +19,7 @@ JVM分享-2018.06.20
   * 2.3 应用加载器 classpath
   * 2.4 自定义类加载器
 ### 垃圾收集算法
+   ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)
 - 1.标记—清除算法
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4.png)
 - 2.复制算法
