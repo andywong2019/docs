@@ -315,6 +315,8 @@ JVM分享-2018.06.20
     * -XX:NewRatio :设置年轻代和老年代的比值
     * -XX:NewSize :设置年轻代的大小
     * -XX:SurvivorRation=n :设置年轻代中Eden区与两个S区的比值
+#### 年龄设置
+    * -XXMaxTenuringThreshold（默认15）
 
 #### 打印垃圾回收信息及设置垃圾回收器
     * -verbose:gc :记录GC运行以及运行时间,一般用来查看GC是否有瓶颈
