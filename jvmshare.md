@@ -12,10 +12,19 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
 
 #### 1.类加载器
-- 1.1双亲委派模型</br>
+- 1.1双亲委派模型、检查、启动、源码查看</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)
 - 1.2为什么需要双亲委派模型</br>
 - 1.3类加载过程</br>
+    * 加载
+    * 连接
+        * 验证
+        * 准备
+        * 解析
+    * 初始化<clinit>
+        * 执行静态代码块，静态变量
+        * public static int a = 10
+        * a=0，a=10
 
 #### 2.JVM运行时数据区域
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)
