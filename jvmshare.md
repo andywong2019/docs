@@ -15,6 +15,7 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
 ### 类加载器
 - 1.双亲委派模型
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)
 - 2.为什么需要双亲委派模型
 - 3.类加载过程
   * 2.1 启动类加载器 lib/rt.jar
