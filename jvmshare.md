@@ -69,7 +69,7 @@ JVM分享-2018.06.20
 
 
 #### 7.空间分配担保
-- CMSDumpAtPromotionFailure 
+- CMSDumpAtPromotionFailure设置为false或者担保失败进行一次fullGC 
 
 #### 7.GC日志分析
 
