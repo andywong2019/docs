@@ -324,6 +324,8 @@ JVM分享-2018.06.20
     * -XX:SurvivorRation=n :设置年轻代中Eden区与两个S区的比值
 #### 年龄设置
     * -XXMaxTenuringThreshold（默认15）
+#### 查看默认设置
+    * -XX:+PrintFlagsInitial
 
 #### 打印垃圾回收信息及设置垃圾回收器
     * -verbose:gc :记录GC运行以及运行时间,一般用来查看GC是否有瓶颈
