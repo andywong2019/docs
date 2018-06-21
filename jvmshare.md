@@ -1,8 +1,10 @@
 JVM分享-2018.06.20
 ===========================
 ### 疑问
-- JVM/JRE/JDK关系
+- JVM/JRE/JDK关系</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jdkjrejvm.png)
 - 为什么需要jvm</br></br></br></br>
+- 为什么需要了解jvm</br></br></br></br>
 ### 核心
 - 1.JVM运行流程</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
