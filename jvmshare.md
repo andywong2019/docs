@@ -323,7 +323,7 @@ JVM分享-2018.06.20
     * 方法返回：ireturn,lreturn,freturn,dreturn,areturn,return
     * 异常：athrow
     * finally关键字的实现使用：jsr,jsr_w,ret
-### JVM参数整理
+### 10.JVM参数整理
 #### java堆栈大小设置相关
     * -Xms :设置Java堆栈的初始化大小
     * -Xmx :设置最大的java堆大小
