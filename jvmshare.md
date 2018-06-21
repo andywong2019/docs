@@ -59,7 +59,7 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
 
 - 4.分代收集算法</br>
-    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/newold.png)
 
 #### 6.垃圾收集器
 - 1.Serial收集器
