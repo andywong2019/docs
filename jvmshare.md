@@ -9,7 +9,8 @@ JVM分享-2018.06.20
 
 ### 核心点
 - JVM运行流程</br>
-    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jvmrun.png)</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcarea.png)</br>
 
 #### 1.类加载器
 - 1.1双亲委派模型、检查启动顺序、源码查看</br>
