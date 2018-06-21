@@ -9,19 +9,15 @@ JVM分享-2018.06.20
 ### 核心
 - 1.JVM运行流程</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
+### 类加载器
+- 2.1双亲委派模型</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)
+- 2.2为什么需要双亲委派模型
+- 2.3类加载过程
 - 2.JVM运行时数据区域</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)
 - 3.JVM内存模型</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
-### 类加载器
-- 1.双亲委派模型</br>
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)
-      * 2.1 启动类加载器 lib/rt.jar
-      * 2.2 扩展类加载器 lib/ext/
-      * 2.3 应用加载器 classpath
-      * 2.4 自定义类加载器
-- 2.为什么需要双亲委派模型
-- 3.类加载过程
 ### 垃圾收集算法</br>
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)</br>
 - 1.标记—清除算法</br>
