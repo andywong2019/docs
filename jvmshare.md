@@ -16,44 +16,45 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)
 - 1.2为什么需要双亲委派模型</br>
 - 1.3类加载过程</br>
-    * 加载
-    * 连接
-        * 验证
-        * 准备
-        * 解析
-    * 初始化<clinit>
-        * 执行静态代码块，静态变量
-        * public static int a = 10
-        * a=0，a=10
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoaderInit.png)
 
 #### 2.JVM运行时数据区域
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)
 
 #### 3.JVM内存模型
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
+
 #### 4.什么时候可以回收对象呢
 - 4.1引用计数法(无法解决互相引用问题)</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E4%BA%92%E7%9B%B8%E5%BC%95%E7%94%A8.png)</br></br>
 - 4.2可达性分析</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots2.png)</br></br>
     * 4.2.1可作为GCRoots
         * 虚拟机栈（局部变量表）引用的对象
         * 方法区中类静态属性引用的对象
         * 方法区中常量引用的对象
-        * 本地方法栈中(jni)引用的对象
+        * 本地方法栈中(jni)引用的对象</br></br>
 - 4.3引用分类(JDK1.2)</br>
     * 4.3.1强引用(代码中的引用)
     * 4.3.2软引用(还有用非必需，第二次GC有可能被回收)
     * 4.3.3弱引用(非必需,第二次一定被回收)
-    * 4.3.4虚引用(非必要,跟踪对象被垃圾回收的状态,只能组合使用)
+    * 4.3.4虚引用(非必要,跟踪对象被垃圾回收的状态,只能组合使用)</br></br>
 - 4.4逃逸分析</br>
 
 #### 5.垃圾收集算法
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)</br>
-- 1.标记—清除算法</br>
+
+- 1.标记—清除算法(Mark-Sweep)最基础的算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4.png)
-- 2.复制算法</br>
+            
+- 2.复制算法(Copying)-新生代常用</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
-- 3.标记—整理算法</br>
+
+- 3.标记—整理算法-老年代常用</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
+
 - 4.分代收集算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
 
@@ -65,6 +66,10 @@ JVM分享-2018.06.20
 - 5.ParallelOld收集器
 - 6.CMS收集器
 - 7.G1收集器
+
+
+#### 7.空间分配担保
+- CMSDumpAtPromotionFailure设置为false或者担保失败进行一次fullGC 
 
 #### 7.GC日志分析
 
