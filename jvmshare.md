@@ -22,8 +22,16 @@ JVM分享-2018.06.20
 
 #### 3.JVM内存模型
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
+#### 4.什么时候可以回收对象呢
+- 4.1引用计数法(无法解决互相引用问题)</br>
+- 4.2可达性分析</br>
+    * 4.2.1可作为GCRoots
+        * 虚拟机栈（局部变量表）引用的对象
+        * 方法区中类静态属性引用的对象
+        * 方法区中常量引用的对象
+        * 本地方法栈中(jni)引用的对象
 
-#### 4.垃圾收集算法
+#### 5.垃圾收集算法
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)</br>
 - 1.标记—清除算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4.png)
@@ -34,7 +42,7 @@ JVM分享-2018.06.20
 - 4.分代收集算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
 
-#### 5.垃圾收集器
+#### 6.垃圾收集器
 - 1.Serial收集器
 - 2.ParNew收集器
 - 3.ParallelScavenge收集器
@@ -43,9 +51,9 @@ JVM分享-2018.06.20
 - 6.CMS收集器
 - 7.G1收集器
 
-#### 6.GC日志分析
+#### 7.GC日志分析
 
-#### 7.排查工具的使用
+#### 8.排查工具的使用
 - jps：虚拟机进程状况工具
 - jstat：虚拟机统计信息监视工具
 - jinfo：Java配置信息工具
@@ -55,9 +63,9 @@ JVM分享-2018.06.20
 - JConsole：Java监视与管理控制台
 - VisualVM：多合一故障处理工具
 
-#### 8.JVM调优
+#### 9.JVM调优
 
-#### 9.JAVAP指令集
+#### 10.JAVAP指令集
 ##### 栈和局部变量操作
 ###### 将常量压入栈的指令
     * aconst_null 将null对象引用压入栈
