@@ -14,8 +14,9 @@ JVM分享-2018.06.20
 - 3.JVM内存模型</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
 ### 类加载器
-- 1.双亲委派模型(检查自底而上,启动自上而下)
-- 2.为什么要双亲委派模型（避免重复加载不安全问题）
+- 1.双亲委派模型
+- 2.为什么需要双亲委派模型
+- 3.类加载过程
   * 2.1 启动类加载器 lib/rt.jar
   * 2.2 扩展类加载器 lib/ext/
   * 2.3 应用加载器 classpath
