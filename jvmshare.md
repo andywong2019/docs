@@ -23,13 +23,14 @@ JVM分享-2018.06.20
 
 #### 3.JVM内存模型
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
+
 #### 4.什么时候可以回收对象呢
 - 4.1引用计数法(无法解决互相引用问题)</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8.png)
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E4%BA%92%E7%9B%B8%E5%BC%95%E7%94%A8.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E4%BA%92%E7%9B%B8%E5%BC%95%E7%94%A8.png)</br>
 - 4.2可达性分析</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots.png)
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots2.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots2.png)</br>
     * 4.2.1可作为GCRoots
         * 虚拟机栈（局部变量表）引用的对象
         * 方法区中类静态属性引用的对象
