@@ -23,7 +23,7 @@ JVM分享-2018.06.20
 #### 3.JVM内存模型
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
 
-### 4.垃圾收集算法
+#### 4.垃圾收集算法
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)</br>
 - 1.标记—清除算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4.png)
@@ -34,7 +34,7 @@ JVM分享-2018.06.20
 - 4.分代收集算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
 
-### 垃圾收集器
+#### 5.垃圾收集器
 - 1.Serial收集器
 - 2.ParNew收集器
 - 3.ParallelScavenge收集器
@@ -43,9 +43,9 @@ JVM分享-2018.06.20
 - 6.CMS收集器
 - 7.G1收集器
 
-### GC日志分析
+#### 6.GC日志分析
 
-### 工具使用
+#### 7.排查工具的使用
 - jps：虚拟机进程状况工具
 - jstat：虚拟机统计信息监视工具
 - jinfo：Java配置信息工具
@@ -55,13 +55,11 @@ JVM分享-2018.06.20
 - JConsole：Java监视与管理控制台
 - VisualVM：多合一故障处理工具
 
-### JVM调优
+#### 8.JVM调优
 
-### JAVAP指令集
-
-#### 栈和局部变量操作
-
-##### 将常量压入栈的指令
+#### 9.JAVAP指令集
+##### 栈和局部变量操作
+###### 将常量压入栈的指令
     * aconst_null 将null对象引用压入栈
     * iconst_m1 将int类型常量-1压入栈
     * iconst_0 将int类型常量0压入栈
@@ -82,7 +80,7 @@ JVM分享-2018.06.20
     * ldc_w 把常量池中的项压入栈（使用宽索引）
     * ldc2_w 把常量池中long类型或者double类型的项压入栈（使用宽索引）
 
-##### 从栈中的局部变量中装载值的指令
+###### 从栈中的局部变量中装载值的指令
     * iload 从局部变量中装载int类型值
     * lload 从局部变量中装载long类型值
     * fload 从局部变量中装载float类型值
@@ -117,7 +115,7 @@ JVM分享-2018.06.20
     * caload 从数组中装载char类型值
     * saload 从数组中装载short类型值
 
-##### 将栈中的值存入局部变量的指令
+###### 将栈中的值存入局部变量的指令
     * istore 将int类型值存入局部变量
     * lstore 将long类型值存入局部变量
     * fstore 将float类型值存入局部变量
@@ -152,9 +150,9 @@ JVM分享-2018.06.20
     * castore 将char类型值存入数组中
     * sastore 将short类型值存入数组中
 
-#### wide指令
+##### wide指令
     * wide 使用附加字节扩展局部变量索引
-#### 通用(无类型）栈操作
+##### 通用(无类型）栈操作
     * nop 不做任何操作
     * pop 弹出栈顶端一个字长的内容
     * pop2 弹出栈顶端两个字长的内容
@@ -165,7 +163,7 @@ JVM分享-2018.06.20
     * dup2_x1 复制栈顶部两个字长的内容，然后将复制内容及原来弹出的三个字长的内容压入栈
     * dup2_x2 复制栈顶部两个字长的内容，然后将复制内容及原来弹出的四个字长的内容压入栈
     * swap 交换栈顶部两个字长内容
-#### 类型转换
+##### 类型转换
     * i2l 把int类型的数据转化为long类型
     * i2f 把int类型的数据转化为float类型
     * i2d 把int类型的数据转化为double类型
@@ -181,7 +179,7 @@ JVM分享-2018.06.20
     * i2b 把int类型的数据转化为byte类型
     * i2c 把int类型的数据转化为char类型
     * i2s 把int类型的数据转化为short类型
-#### 整数运算
+##### 整数运算
     * iadd 执行int类型的加法
     * ladd 执行long类型的加法
     * isub 执行int类型的减法
