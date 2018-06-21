@@ -45,7 +45,7 @@ JVM分享-2018.06.20
 
 #### 5.垃圾收集算法
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)</br>
-- 1.标记—清除算法</br>
+- 1.标记—清除算法(Mark-Sweep)</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4.png)
 - 2.复制算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
