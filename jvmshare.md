@@ -1,24 +1,29 @@
 JVM分享-2018.06.20
 ===========================
-### 概念及疑问
+### 一些概念及疑问
 - JVM/JRE/JDK关系</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jdkjrejvm.png)
 - 查看当前使用虚拟机信息</br>
 - 为什么需要jvm</br>
 - 为什么需要了解jvm</br>
-### 核心
-- 1.JVM运行流程</br>
+
+### 核心点
+- JVM运行流程</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
-### 类加载器
-- 2.1双亲委派模型</br>
+
+#### 1.类加载器
+- 1.1双亲委派模型</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)
-- 2.2为什么需要双亲委派模型
-- 2.3类加载过程
-- 2.JVM运行时数据区域</br>
-    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)
-- 3.JVM内存模型</br>
-    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
-### 垃圾收集算法</br>
+- 1.2为什么需要双亲委派模型</br>
+- 1.3类加载过程</br>
+
+#### 2.JVM运行时数据区域
+   ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)
+
+#### 3.JVM内存模型
+   ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
+
+### 4.垃圾收集算法
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)</br>
 - 1.标记—清除算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4.png)
@@ -28,6 +33,7 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
 - 4.分代收集算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
+
 ### 垃圾收集器
 - 1.Serial收集器
 - 2.ParNew收集器
@@ -36,7 +42,9 @@ JVM分享-2018.06.20
 - 5.ParallelOld收集器
 - 6.CMS收集器
 - 7.G1收集器
+
 ### GC日志分析
+
 ### 工具使用
 - jps：虚拟机进程状况工具
 - jstat：虚拟机统计信息监视工具
@@ -46,9 +54,13 @@ JVM分享-2018.06.20
 - jstack：Java堆栈跟踪工具
 - JConsole：Java监视与管理控制台
 - VisualVM：多合一故障处理工具
+
 ### JVM调优
+
 ### JAVAP指令集
+
 #### 栈和局部变量操作
+
 ##### 将常量压入栈的指令
     * aconst_null 将null对象引用压入栈
     * iconst_m1 将int类型常量-1压入栈
