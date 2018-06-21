@@ -27,20 +27,20 @@ JVM分享-2018.06.20
 #### 4.什么时候可以回收对象呢
 - 4.1引用计数法(无法解决互相引用问题)</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8.png)
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E4%BA%92%E7%9B%B8%E5%BC%95%E7%94%A8.png)</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E4%BA%92%E7%9B%B8%E5%BC%95%E7%94%A8.png)</br></br>
 - 4.2可达性分析</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots.png)
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots2.png)</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcroots2.png)</br></br>
     * 4.2.1可作为GCRoots
         * 虚拟机栈（局部变量表）引用的对象
         * 方法区中类静态属性引用的对象
         * 方法区中常量引用的对象
-        * 本地方法栈中(jni)引用的对象
+        * 本地方法栈中(jni)引用的对象</br>
 - 4.3引用分类(JDK1.2)</br>
     * 4.3.1强引用(代码中的引用)
     * 4.3.2软引用(还有用非必需，第二次GC有可能被回收)
     * 4.3.3弱引用(非必需,第二次一定被回收)
-    * 4.3.4虚引用(非必要,跟踪对象被垃圾回收的状态,只能组合使用)
+    * 4.3.4虚引用(非必要,跟踪对象被垃圾回收的状态,只能组合使用)</br>
 - 4.4逃逸分析</br>
 
 #### 5.垃圾收集算法
