@@ -1,9 +1,8 @@
 JVM分享-2018.06.20
 ===========================
-### 一些概念
-- 1.jvm与普通虚拟机
-- 2.jvm/jre/jdk
-- 3.为什么需要jvm
+### 疑问
+- JVM/JRE/JDK关系
+- 为什么需要jvm</br></br></br></br>
 ### 核心
 - 1.JVM运行流程</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
@@ -18,14 +17,15 @@ JVM分享-2018.06.20
   * 2.2 扩展类加载器 lib/ext/
   * 2.3 应用加载器 classpath
   * 2.4 自定义类加载器
-### 垃圾收集算法
-- 1.标记—清除算法
+### 垃圾收集算法</br>
+   ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/help.png)</br>
+- 1.标记—清除算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%88%A0%E9%99%A4.png)
-- 2.复制算法
+- 2.复制算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
-- 3.标记—整理算法
+- 3.标记—整理算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
-- 4.分代收集算法
+- 4.分代收集算法</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
 ### 垃圾收集器
 - 1.Serial收集器
@@ -321,9 +321,11 @@ JVM分享-2018.06.20
     * -XX:PermSize and MaxPermSize :设置持久带的大小
     * -XX:NewRatio :设置年轻代和老年代的比值
     * -XX:NewSize :设置年轻代的大小
-    * -XX:SurvivorRation=n :设置年轻代中Eden区与两个S区的比值
+    * -XX:SurvivorRatio :设置年轻代中Eden区与两个S区的比值
 #### 年龄设置
     * -XXMaxTenuringThreshold（默认15）
+#### 查看默认设置
+    * -XX:+PrintFlagsInitial
 
 #### 打印垃圾回收信息及设置垃圾回收器
     * -verbose:gc :记录GC运行以及运行时间,一般用来查看GC是否有瓶颈
