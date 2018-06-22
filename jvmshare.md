@@ -10,7 +10,6 @@ JVM分享-2018.06.20
 ### 核心点
 - JVM运行流程</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jvmrun.png)</br>
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcarea.png)</br>
 
 #### 1.类加载器
 - 1.1双亲委派模型、检查启动顺序、源码查看</br>
@@ -20,7 +19,8 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoaderInit.png)
 
 #### 2.JVM运行时数据区域
-   ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)
+   ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)</br>
+   ![avatar](https://github.com/AndyWong007/docs/blob/master/img/gcarea.png)</br>
 
 #### 3.JVM内存模型
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
@@ -56,8 +56,8 @@ JVM分享-2018.06.20
 - 2.复制算法(Copying)-新生代常用</br>
     ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
 
-- 3.标记—整理算法-老年代常用</br>
-    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png)
+- 3.标记—整理算法(Mark-Compact也叫标记压缩)-老年代常用</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/%E6%A0%87%E8%AE%B0%E5%8E%8B%E7%BC%A9.png)
 
 - 4.分代收集算法</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/newold.png)
