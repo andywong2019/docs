@@ -3,13 +3,13 @@ JVM分享-2018.06.20
 ### 一些概念及疑问
 - JVM/JRE/JDK关系</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jdkjrejvm.png)</br>
-    * JVM < JRE < JDK(包含)
+    * JVM < JRE < JDK(包含与被包含的关系)
 - 查看当前使用虚拟机信息</br>
     * java -version
 - 为什么需要jvm</br>
     * 跨平台性(一次编写到处运行)
 - 为什么需要了解jvm</br>
-    * 了解底层更好地调优，OOM等等问题排查
+    * 了解底层能够更好地调优及OOM等等问题的排查
 
 ### 核心点
 - JVM运行流程</br>
@@ -30,9 +30,13 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoaderInit.png)</br>
     * 加载、验证、准备、初始化和卸载顺序是确定的
     * 解析阶段有可能在初始化之后
-        * 初始化必须立即对类进行初始化的5种情况
-            * 遇到new、getstatic、putstatic、invokestatic4条指令，如果类没有初始化，必须进行初始化
-            如：使用new关键字实例化对象
+        * 初始化必须立即对类进行初始化的有且仅有的5种情况
+            * 1.遇到new、getstatic、putstatic、invokestatic4条指令，如果类没有初始化，必须进行初始化
+            如：使用new关键字实例化对象、读取或设置一个静态字段(被final修饰、已在编译期间把结果放入常量池的静态字段除外)、调用一个类的静态方法
+            * 2.使用java.lang.reflect包的方法对类进行发射调用的时候，如果类没有初始化，必须进行初始化
+            * 3.当初始化一个类，发现其父类还没有初始化，则需要先触发其父类的初始化
+            * 4.当虚拟机启动用户需要指定一个启动主类（包含main()方法的那个类），虚拟机会先初始化这个主类
+            * 5.当使用jdk1.7的动态语言支持时，如果一个java.lang.invoke.MethodHandle实例最后的结果结果REF_getStatic、REF_putStatic、REF_invokeStatic的方法句柄，并且这个方法句柄所对应的类还没有进行过初始化则需要先触发其初始化
 
 #### 2.JVM运行时数据区域
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)</br>
