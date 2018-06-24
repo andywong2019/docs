@@ -4,8 +4,11 @@ JVM分享-2018.06.20
 - JVM/JRE/JDK关系</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jdkjrejvm.png)
 - 查看当前使用虚拟机信息</br>
+    * java -version
 - 为什么需要jvm</br>
+    * 跨平台性(一次编写到处运行)
 - 为什么需要了解jvm</br>
+    * 了解底层更好地调优，OOM等等问题排查
 
 ### 核心点
 - JVM运行流程</br>
