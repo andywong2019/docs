@@ -17,8 +17,11 @@ JVM分享-2018.06.20
 
 #### 1.类加载器
 - 1.1双亲委派模型、检查启动顺序、源码查看</br>
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)</br>
+    * 检查至下而上，启动加载至上而下
+    * 源码查看ClassLoader的loadClass
 - 1.2为什么需要双亲委派模型</br>
+    * 解决重复加载安全性问题
 - 1.3类加载过程</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoaderInit.png)
 
