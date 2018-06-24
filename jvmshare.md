@@ -2,7 +2,8 @@ JVM分享-2018.06.20
 ===========================
 ### 一些概念及疑问
 - JVM/JRE/JDK关系</br>
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jdkjrejvm.png)
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jdkjrejvm.png)</br>
+    * JVM < JRE < JDK(包含)
 - 查看当前使用虚拟机信息</br>
     * java -version
 - 为什么需要jvm</br>
