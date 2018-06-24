@@ -18,7 +18,7 @@ JVM分享-2018.06.20
 #### 1.类加载器
 - 1.1双亲委派模型、检查启动顺序、源码查看</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)</br>
-    * 检查至下而上，启动加载至上而下
+    * 检查有没有加载是至下而上，启动加载是至上而下
     * 源码查看ClassLoader的loadClass
 - 1.2加载目录</br>
     * 启动类加载器lib/rt.jar
@@ -37,6 +37,7 @@ JVM分享-2018.06.20
             * 3.当初始化一个类，发现其父类还没有初始化，则需要先触发其父类的初始化
             * 4.当虚拟机启动用户需要指定一个启动主类（包含main()方法的那个类），虚拟机会先初始化这个主类
             * 5.当使用jdk1.7的动态语言支持时，如果一个java.lang.invoke.MethodHandle实例最后的结果结果REF_getStatic、REF_putStatic、REF_invokeStatic的方法句柄，并且这个方法句柄所对应的类还没有进行过初始化则需要先触发其初始化
+- 1.5类加载过程</br>
 
 #### 2.JVM运行时数据区域
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)</br>
