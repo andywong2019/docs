@@ -20,9 +20,13 @@ JVM分享-2018.06.20
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoader.png)</br>
     * 检查至下而上，启动加载至上而下
     * 源码查看ClassLoader的loadClass
-- 1.2为什么需要双亲委派模型</br>
+- 1.2加载目录</br>
+    * 启动类加载器lib/rt.jar
+    * 扩展类加载器lib/ext
+    * 应用类加载器 classpath下的jar
+- 1.3为什么需要双亲委派模型</br>
     * 解决重复加载安全性问题
-- 1.3类加载过程</br>
+- 1.4类加载过程</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoaderInit.png)
 
 #### 2.JVM运行时数据区域
