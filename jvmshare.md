@@ -26,8 +26,13 @@ JVM分享-2018.06.20
     * 应用类加载器 classpath下的jar
 - 1.3为什么需要双亲委派模型</br>
     * 解决重复加载安全性问题
-- 1.4类加载过程</br>
-    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoaderInit.png)
+- 1.4类加载时机</br>
+    ![avatar](https://github.com/AndyWong007/docs/blob/master/img/classLoaderInit.png)</br>
+    * 加载、验证、准备、初始化和卸载顺序是确定的
+    * 解析阶段有可能在初始化之后
+        * 初始化必须立即对类进行初始化的5种情况
+            * 遇到new、getstatic、putstatic、invokestatic4条指令，如果类没有初始化，必须进行初始化
+            如：使用new关键字实例化对象
 
 #### 2.JVM运行时数据区域
    ![avatar](https://github.com/CatcherInRye001/docs/blob/master/img/jvm%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE.png)</br>
