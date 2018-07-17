@@ -14,6 +14,9 @@ JVM分享-2018.06.20
 ### 核心点
 - JVM运行流程</br>
     ![avatar](https://github.com/AndyWong007/docs/blob/master/img/jvmrun.png)</br>
+        * 源代码(.java)被编译器编译(javac)后成为.class文件，通过类加载器(classLoader)加载后放入运行时数据区域
+        * 类加载器加载过程、时机
+        * 运行时数据区域划分
 
 #### 1.类加载器
 - 1.1双亲委派模型、检查启动顺序、源码查看</br>
